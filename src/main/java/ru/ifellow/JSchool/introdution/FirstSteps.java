@@ -66,7 +66,7 @@ public class FirstSteps {
     }
 
     public double average(int[] array){
-        int sum = 0;
+        double sum = 0;
         for(int i = 0; i < array.length; i++){
             sum = sum + array[i];
         }
@@ -113,6 +113,9 @@ public class FirstSteps {
 
     public boolean isPalindrome(int[]array){
         boolean result = true;
+        if (array.length == 0){
+            return result;
+        }
         for(int i = 0; i <= array.length / 2; i++){
             if(array[i] != array[array.length - 1 - i]){
                 result = false;
