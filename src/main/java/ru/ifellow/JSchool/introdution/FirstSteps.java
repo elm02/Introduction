@@ -77,7 +77,7 @@ public class FirstSteps {
     public boolean isSortedDescendant(int[] array){
         boolean result = true;
         for(int i = 1; i < array.length; i++){
-            if(array[i] > array[i-1]){
+            if(array[i] >= array[i-1]){
                 result = false;
                 break;
             }
