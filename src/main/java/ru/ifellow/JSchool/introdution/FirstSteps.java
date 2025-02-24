@@ -103,6 +103,9 @@ public class FirstSteps {
     }
 
     public void reverse(int[]array){
+        if(array.length == 0){
+            return;
+        }
         int lastNumber = array.length - 1;
         for(int i = 0; i <= lastNumber/ 2; i++){
             int x = array[i];
